@@ -2,7 +2,7 @@ class BankAccount
 attr_accessor
 
 def initialize(account_name)
-  
+
   @name = account_name
   @balance = 1000
   @status = "open"
@@ -16,7 +16,7 @@ def display_balance
   def valid?
       @status == "open" && @balance > 0 ? true : false
     end
-  
+
     def close_account
       @status = "closed"
     end
